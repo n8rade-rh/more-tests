@@ -1,2 +1,4 @@
 collections:
   - name: ansible.netcommon
+    signatures:
+      - file:///tmp/setup/gpg_public.asc
