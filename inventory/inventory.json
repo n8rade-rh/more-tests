@@ -1,0 +1,28 @@
+{
+    "_meta": {
+        "hostvars": {
+            "1.2.3.4": {
+                "ansible_host": "1.2.3.4",
+                "password": "{{ BIG_SECRET }}"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "pdu",
+            "wlc",
+            "ups"
+        ]
+    },
+    "pdu": {
+        "hosts": [
+            "1.2.3.4"
+        ]
+    },
+    "ups": {
+        "hosts": [
+            "2.3.4.5"
+        ]
+    }
+}
